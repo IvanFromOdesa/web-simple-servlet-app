@@ -6,6 +6,8 @@ Users are retrieved from in-memory list of server. Unathorized users do not have
 
 Defaulft domain URL is ```http://localhost:8081/web-simple-servlet-app```
 
+List with user logins and passwords can be found at ```src/main/java/org.ivanservlets/user/UserDao.java```
+
 ### Build & deployment
 To build the web-app, run ```mvn package``` in terminal from project destination.
 
