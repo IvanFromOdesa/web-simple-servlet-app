@@ -118,7 +118,6 @@ public class AuthenticationFilter implements Filter {
      * @param req client request
      * @param res server response
      */
-
     private static void checkFor_401(String errorMessage,
                                      HttpServletRequest req,
                                      HttpServletResponse res) {

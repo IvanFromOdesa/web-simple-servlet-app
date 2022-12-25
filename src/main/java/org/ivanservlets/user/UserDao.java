@@ -42,6 +42,13 @@ public class UserDao {
         return false;
     }
 
+    /**
+     * Returns errorMessage for login form. Either, null
+     * (if credentials are valid or not present yet), "Incorrect password!"
+     * or "Incorrect login!" to indicate where the validation failed.
+     * @return errorMessage
+     */
+
     public String getErrorMessage() {
         return errorMessage;
     }
