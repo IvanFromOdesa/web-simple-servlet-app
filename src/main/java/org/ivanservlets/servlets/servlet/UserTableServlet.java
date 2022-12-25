@@ -24,7 +24,7 @@ public class UserTableServlet extends HttpServlet {
                 (AtomicReference<UserDao>) req.getServletContext().getAttribute("dao");
         // Get all Users
         List<User> usersList = dao.get().getUsers();
-        // Add set as attribute to the request
+        // Add list as attribute to the request
         req.setAttribute("usersList", usersList);
         // Move to the page with users table
         req.getRequestDispatcher("/WEB-INF/view/users.jsp").forward(req, res);
