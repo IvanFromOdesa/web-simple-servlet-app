@@ -58,7 +58,6 @@ public class AuthenticationFilter implements Filter {
         }
         // Else check for credentials
         else {
-            System.out.println("s");
             checkCredentials(session, req, res, filterChain, login, password, dao);
         }
     }

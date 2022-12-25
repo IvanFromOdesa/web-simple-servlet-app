@@ -22,6 +22,7 @@ public class UserDao {
     public boolean isUserPresent(String login, String password) {
         // Nothing was submitted yet
         if(login == null && password == null) {
+            errorMessage = null;
             return false;
         }
         for (User user : users) {
