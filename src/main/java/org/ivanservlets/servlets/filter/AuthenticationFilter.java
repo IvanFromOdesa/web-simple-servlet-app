@@ -100,11 +100,34 @@ public class AuthenticationFilter implements Filter {
             }
             // Credentials are wrong or not present
             else {
+                String errorMessage = userDao.getErrorMessage();
+                checkFor_401(errorMessage, req, res);
                 // Send error message
-                req.setAttribute("errorMessage", userDao.getErrorMessage());
+                req.setAttribute("errorMessage", errorMessage);
                 // Stay at the login page
                 req.getRequestDispatcher("/WEB-INF/view/login.jsp").forward(req, res);
             }
+        }
+    }
+
+    /**
+     * Checks if the user is trying to access any resource unauthorized. If so,
+     * sets status code 401 to response. If user-input credentials are wrong,
+     * also does that.
+     * @param errorMessage message containing info about incorrect credentials
+     * @param req client request
+     * @param res server response
+     */
+
+    private static void checkFor_401(String errorMessage,
+                                     HttpServletRequest req,
+                                     HttpServletResponse res) {
+        String requestURI = req.getRequestURI();
+        if(errorMessage != null || !requestURI
+                .substring(requestURI.lastIndexOf("/") + 1)
+                .equals("")) {
+            // If credentials wrong or user is trying to access any resource unauthorized
+            res.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
         }
     }
 
