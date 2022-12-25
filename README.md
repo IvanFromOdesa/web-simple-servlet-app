@@ -4,6 +4,8 @@
 Simple web-application with form-based authentication. You can login/logout and retrieve the list of users that have access to the app (their names and logins).
 Users are retrieved from in-memory list of server. Unathorized users do not have access to any of app resources.
 
+Defaulft domain URL is ```http://localhost:8081/web-simple-servlet-app```
+
 ### Build & deployment
 To build the web-app, run ```mvn package``` in terminal from project destination.
 
