@@ -26,7 +26,7 @@ public class AuthenticationFilter implements Filter {
      * Links that do not require the validation from this filter
      */
     private static final Set<String> allowedLinks = new HashSet<>(Arrays.asList(
-            "/logout", "styles.css", "js/app.js"
+            "logout", "styles.css", "app.js"
     ));
 
     @Override
