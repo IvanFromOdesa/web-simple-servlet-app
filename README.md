@@ -7,7 +7,7 @@ Users are retrieved from in-memory list of server. Unathorized users do not have
 ### Build & deployment
 To build the web-app, run ```mvn package``` in terminal from project destination.
 
-A ```.war``` file will appear at target folder after ```**BUILD SUCCESS**```.
+A ```.war``` file will appear at target folder after **BUILD SUCCESS**.
 
 Start Tomcat server and deploy the ```.war``` file.
 
