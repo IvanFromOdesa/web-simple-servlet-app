@@ -3,7 +3,7 @@ package org.ivanservlets.user;
 import java.util.List;
 
 /**
- * No db source required. We use in-memory HashSet to store all present users.
+ * No db source required. We use in-memory List to store all present users.
  */
 public class UserDao {
 
