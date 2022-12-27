@@ -8,8 +8,6 @@ See ```UserDao``` for more details on db startup.
 
 Default domain URL is ```http://localhost:8081/web-simple-servlet-app```
 
-List with user logins and passwords can be found at ```src/main/java/org.ivanservlets/user/UserDao.java```
-
 ### Build & deployment
 To build the web-app, run ```mvn package``` in terminal from project destination.
 
