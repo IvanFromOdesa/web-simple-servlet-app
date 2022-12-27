@@ -4,7 +4,7 @@
 Simple web-application with form-based authentication. You can log in/logout and retrieve the list of users that have access to the app (their names and logins).
 Users are retrieved from db table. Unauthorized users do not have access to any of app resources.
 
-See UserDao for more details on db startup.
+See ```UserDao``` for more details on db startup.
 
 Default domain URL is ```http://localhost:8081/web-simple-servlet-app```
 
