@@ -1,6 +1,6 @@
 package org.ivanservlets.servlets.filter;
 
-import org.ivanservlets.user.UserDao;
+import org.ivanservlets.user.dao.UserDao;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;

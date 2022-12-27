@@ -14,12 +14,14 @@
     <tr>
         <th>Name</th>
         <th>Login</th>
+        <th>Role</th>
     </tr>
     </thead>
     <c:forEach var="user" items="${usersList}">
         <tr>
-            <td>${user.name()}</td>
-            <td>${user.login()}</td>
+            <td>${user.getName()}</td>
+            <td>${user.getLogin()}</td>
+            <td>${user.getRole()}</td>
         </tr>
     </c:forEach>
 </table>

@@ -1,7 +1,7 @@
 package org.ivanservlets.servlets.servlet;
 
-import org.ivanservlets.user.User;
-import org.ivanservlets.user.UserDao;
+import org.ivanservlets.user.model.User;
+import org.ivanservlets.user.dao.UserDao;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
